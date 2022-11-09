@@ -57,10 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMotionController.cs" />
+    <Compile Include="Assets\Scripts\Collector.cs" />
+    <Compile Include="Assets\Scripts\CollectableCube.cs" />
     <Compile Include="Assets\Scripts\CamTracker.cs" />
     <Compile Include="Assets\Scripts\PlayerMotion.cs" />
-    <Compile Include="Assets\Scripts\CollectableCube.cs" />
-    <Compile Include="Assets\Scripts\Collector.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

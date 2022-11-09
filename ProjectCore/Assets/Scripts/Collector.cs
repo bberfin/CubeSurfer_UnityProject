@@ -31,4 +31,15 @@ public class Collector : MonoBehaviour
         cubes.Add(gameObject);
         SetLastCube();
     }
+
+    public void RemoveCube(GameObject gameObject)
+    {
+        // küpü artýk oyuncuyla iliþkilendirme
+        gameObject.transform.parent = null;
+        // küpü bloktan kaldýr
+        cubes.Remove(gameObject);
+        //son küpü güncelle
+        SetLastCube();
+    }
+
 }
