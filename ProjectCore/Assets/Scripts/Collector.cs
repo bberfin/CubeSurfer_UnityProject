@@ -42,4 +42,14 @@ public class Collector : MonoBehaviour
         SetLastCube();
     }
 
+/*
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "wall")
+        {
+            Debug.Log("FAIL");
+
+        }
+    }
+*/
 }

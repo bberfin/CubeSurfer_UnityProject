@@ -26,7 +26,7 @@ public class CollectableCube : MonoBehaviour
  
         private void SetRaycast()
         {
-            if (Physics.Raycast(transform.position, direction, out hit, 0.057f))
+            if (Physics.Raycast(transform.position, direction, out hit, 0.07f))
             {
                 if (!isCollect)
                 {
@@ -35,7 +35,7 @@ public class CollectableCube : MonoBehaviour
                     SetDirection();
                 }
 
-                if(hit.transform.name == "wallRed")
+            if (hit.transform.name == "wallRed")
                 {
                     collector.RemoveCube(gameObject);
                 }
