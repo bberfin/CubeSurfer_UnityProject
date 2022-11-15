@@ -1,10 +1,11 @@
 
+using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMoverRunner : MonoBehaviour
 {
-   // [SerializeField]
-    //public float Velocity;
+
 
     [SerializeField]
     private PlayerMoverController playerMoverController;
@@ -20,6 +21,7 @@ public class PlayerMoverRunner : MonoBehaviour
     private float LimitY;
 
     private float newPositionX;
+
 
 
     private void FixedUpdate()
@@ -40,6 +42,9 @@ public class PlayerMoverRunner : MonoBehaviour
         newPositionX = Mathf.Clamp(newPositionX, LimitY, LimitX);
         transform.position = new Vector3(newPositionX, transform.position.y, transform.position.z);
     }
+
+
+
 
 
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cube
   - Obstacle
+  - FinishLine
   layers:
   - Default
   - TransparentFX

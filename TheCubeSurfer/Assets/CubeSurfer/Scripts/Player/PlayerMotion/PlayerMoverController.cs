@@ -22,13 +22,18 @@ public class PlayerMoverController : MonoBehaviour
 
     private void Motion()
     {
+
+        /*
         if (Input.GetMouseButtonDown(0))
         {
             velocityX = Input.mousePosition.x;
 
             Debug.Log("mouse-> one click");
         }
-        else if (Input.GetMouseButton(0))
+
+        */
+
+        if (Input.GetMouseButton(0))
         {
             velocityX = Input.GetAxis("Mouse X");
 
@@ -40,4 +45,8 @@ public class PlayerMoverController : MonoBehaviour
             Debug.Log("mouse-> release");
         }
     }
+
+
+
+
 }

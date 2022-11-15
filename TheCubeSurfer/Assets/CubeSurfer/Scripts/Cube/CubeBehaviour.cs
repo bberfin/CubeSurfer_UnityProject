@@ -1,4 +1,6 @@
 
+using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 
 public class CubeBehaviour : MonoBehaviour
@@ -7,6 +9,8 @@ public class CubeBehaviour : MonoBehaviour
     private Vector3 direction = Vector3.forward;
     public bool isStacked = false;
     private RaycastHit hit;
+
+    public PlayerMoverRunner playerMoverRunner;
 
     void FixedUpdate()
     {
@@ -22,8 +26,36 @@ public class CubeBehaviour : MonoBehaviour
             {
                 PlayerCubeManager.Instance.DropCube(this);
             }
+
+            
+            if (hit.transform.gameObject.CompareTag("FinishLine"))
+            {
+                Debug.Log($"on trigger enter: {hit.transform.gameObject.name}");
+                AccessEndPoint();
+            }
+
+
+
         }
     }
+
+
+    public void AccessEndPoint()
+    {
+        GameManager.Instance.ActivateWinUI();
+        Debug.Log("win!");
+
+    }
+
+    IEnumerator DecreaseSpeedOfPlayer()
+    {
+        var yieldReturn = new WaitForEndOfFrame();
+        while (true)
+        {
+
+        }
+    }
+
 
 
 

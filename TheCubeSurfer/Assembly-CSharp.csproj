@@ -66,6 +66,7 @@
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerBehaviour.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\CubeSurfer\Scripts\Game\GameManager.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Cube\CubeBehaviour.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
