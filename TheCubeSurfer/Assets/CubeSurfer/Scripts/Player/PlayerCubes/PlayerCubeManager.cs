@@ -42,6 +42,8 @@ public class PlayerCubeManager : MonoBehaviour
 
         RelocatePlayer();
 
+        ScoreScene.Instance.PlayerScore++;
+
     }
 
     private void RelocatePlayer()
@@ -57,6 +59,7 @@ public class PlayerCubeManager : MonoBehaviour
         cubeBehaviour.isStacked = false;
 
         listOfCubeBehaviour.Remove(cubeBehaviour);
+        ScoreScene.Instance.PlayerScore--;
 
         if (listOfCubeBehaviour.Count < 1)
         {
