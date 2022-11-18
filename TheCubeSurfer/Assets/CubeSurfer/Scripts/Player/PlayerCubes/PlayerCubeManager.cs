@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class PlayerCubeManager : MonoBehaviour
 {
+
+    AudioSource audioSource;
+
     private float stepLength = 0.043f;
     private float groundYValue = -0.0213f;
 
@@ -41,6 +44,9 @@ public class PlayerCubeManager : MonoBehaviour
         ReorderCubes();
 
         RelocatePlayer();
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
 
         ScoreScene.Instance.Cubes++;
 

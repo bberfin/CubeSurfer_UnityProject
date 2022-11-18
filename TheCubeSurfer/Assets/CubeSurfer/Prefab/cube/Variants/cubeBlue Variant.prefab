@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2062801778738401541, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
       propertyPath: m_Name
-      value: cubeBlue
+      value: cubeBlue Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2062801778738401544, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
       propertyPath: m_RootOrder
@@ -55,5 +55,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6555892432191601497, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}

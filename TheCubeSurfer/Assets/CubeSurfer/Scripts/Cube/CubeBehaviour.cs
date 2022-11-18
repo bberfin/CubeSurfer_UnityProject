@@ -12,6 +12,10 @@ public class CubeBehaviour : MonoBehaviour
 
     public PlayerMoverRunner playerMoverRunner;
 
+    
+    AudioSource audioSource;
+
+
     void FixedUpdate()
     {
         if (!isStacked)
@@ -24,6 +28,8 @@ public class CubeBehaviour : MonoBehaviour
         {
             if (hit.transform.gameObject.CompareTag("Obstacle"))
             {
+                audioSource = hit.transform.gameObject.GetComponent<AudioSource>();
+                audioSource.Play();
                 PlayerCubeManager.Instance.DropCube(this);
             }
 
@@ -36,9 +42,12 @@ public class CubeBehaviour : MonoBehaviour
 
             if (hit.transform.gameObject.CompareTag("Diamond"))
             {
-                Debug.Log($"on trigger enter: {hit.transform.gameObject.name}");
+                audioSource = GetComponent<AudioSource>();
+                audioSource.Play();
+                Debug.Log($"on trigger enter: {hit.transform.gameObject.name}");  
                 Destroy(hit.transform.gameObject);
                 ScoreScene.Instance.PlayerScore++;
+                
             }
 
         }
