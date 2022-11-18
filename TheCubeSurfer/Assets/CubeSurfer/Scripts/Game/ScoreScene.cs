@@ -7,7 +7,21 @@ public class ScoreScene : MonoBehaviour
 {
 
     public TextMeshProUGUI Txt_score;
+    public TextMeshProUGUI Txt_cubes;
     public static ScoreScene Instance;
+
+    public float Cubes
+    {
+        get
+        {
+            return PlayerPrefs.GetFloat("Cubes", 1f);
+        }
+        set
+        {
+            PlayerPrefs.SetFloat("Cubes", value);
+            Txt_cubes.text = "CUBES: " + value.ToString();
+        }
+    }
 
     public float PlayerScore
     {
@@ -18,15 +32,15 @@ public class ScoreScene : MonoBehaviour
         set
         {
             PlayerPrefs.SetFloat("Score", value);
-            Txt_score.text = value.ToString();
+            Txt_score.text = "SCORE: " + value.ToString();
         }
     }
-
 
     // Start is called before the first frame update
     private void Start()
     {
-        PlayerScore = 1f;
+        Cubes = 1f;
+        PlayerScore = 0f;
     }
 
     private void Awake()

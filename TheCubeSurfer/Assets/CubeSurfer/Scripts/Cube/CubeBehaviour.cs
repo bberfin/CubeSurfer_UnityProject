@@ -34,7 +34,12 @@ public class CubeBehaviour : MonoBehaviour
                 AccessEndPoint();
             }
 
-
+            if (hit.transform.gameObject.CompareTag("Diamond"))
+            {
+                Debug.Log($"on trigger enter: {hit.transform.gameObject.name}");
+                Destroy(hit.transform.gameObject);
+                ScoreScene.Instance.PlayerScore++;
+            }
 
         }
     }

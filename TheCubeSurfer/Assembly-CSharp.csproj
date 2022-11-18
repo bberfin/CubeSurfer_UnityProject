@@ -59,10 +59,12 @@
     <Compile Include="Assets\CubeSurfer\Scripts\Player\CubeDetector\CubeDetector.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerMotion\PlayerMoverRunner.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
+    <Compile Include="Assets\CubeSurfer\Scripts\Game\ScoreScene.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerBehaviour.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs" />
@@ -73,7 +75,6 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerCubes\PlayerCubeManager.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerMotion\PlayerMoverController.cs" />
-    <Compile Include="Assets\CubeSurfer\Scripts\Game\ScoreScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -83,6 +84,8 @@
     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\AurynSky\Gems Ultimate Pack\READ ME.txt" />
+    <None Include="Assets\Downtown Game Studio\HYPERCASUAL - Simple Female &amp; Male Characters\Documentation.txt" />
     <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
