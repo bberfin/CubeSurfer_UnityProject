@@ -66,4 +66,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainScene");
     }
+
+    public void NextLevel2()
+    {
+        SceneManager.LoadScene("Level2");
+    }
 }

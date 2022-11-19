@@ -65,7 +65,8 @@ public class CubeBehaviour : MonoBehaviour
     public void AccessNextLevelEndPoint()
     {
         PlayerBehaviour.Instance.VictoryAnimation();
-        //GameManager.Instance.ActivateNextUI();
+        PlayerBehaviour.Instance.SlowDownPlayer();
+        GameManager.Instance.ActivateNextUI();
         Debug.Log("next level!");
 
 
@@ -76,25 +77,13 @@ public class CubeBehaviour : MonoBehaviour
     public void AccessEndPoint()
     {
         PlayerBehaviour.Instance.VictoryAnimation();
-       // GameManager.Instance.ActivateWinUI();
+        PlayerBehaviour.Instance.SlowDownPlayer();
+        GameManager.Instance.ActivateWinUI();
         Debug.Log("win!");
 
-
-
-
-
     }
 
 
-
-    IEnumerator DecreaseSpeedOfPlayer()
-    {
-        var yieldReturn = new WaitForEndOfFrame();
-        while (true)
-        {
-
-        }
-    }
 
 
 

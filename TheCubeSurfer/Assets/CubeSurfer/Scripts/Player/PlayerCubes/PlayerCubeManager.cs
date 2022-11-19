@@ -72,7 +72,7 @@ public class PlayerCubeManager : MonoBehaviour
             Debug.Log("Gameover");
 
             PlayerBehaviour.Instance.FailAnimation();
-            //PlayerBehaviour.Instance.StopPlayer();
+            PlayerBehaviour.Instance.StopPlayer();
 
             var playerTransform2 = PlayerBehaviour.Instance.transform;
             Vector3 groundTarget = new Vector3(0f, -0.016f, -0.14f);

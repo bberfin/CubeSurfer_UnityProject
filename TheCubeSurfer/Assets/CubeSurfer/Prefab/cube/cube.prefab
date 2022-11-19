@@ -127,7 +127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isStacked: 0
-  playerMoverRunner: {fileID: 0}
 --- !u!82 &-5582115459611695146
 AudioSource:
   m_ObjectHideFlags: 0

@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cubeBlue Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2062801778738401542, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 42624209ee905e84c8e6eb4dbefb8afb, type: 2}
     - target: {fileID: 2062801778738401544, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
       propertyPath: m_RootOrder
       value: 0

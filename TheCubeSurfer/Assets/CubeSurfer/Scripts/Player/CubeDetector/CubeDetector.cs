@@ -28,8 +28,7 @@ public class CubeDetector : MonoBehaviour
     public void AccessEndPoint()
     {
 
-        
-
+      
     }
 
 
