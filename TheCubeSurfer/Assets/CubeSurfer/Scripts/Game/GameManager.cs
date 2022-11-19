@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
  
     public RectTransform WinUI;
     public RectTransform FailUI;
+    public RectTransform Score;
+    public RectTransform Cubes;
 
     #region Singleton
 
@@ -44,6 +46,18 @@ public class GameManager : MonoBehaviour
 
         FailUI.gameObject.SetActive(true);
         Vector3 defaultScale = FailUI.transform.localScale;
+
+        /*
+                WinUI.transform.localScale = Vector3.one * 0.0001f;
+                WinUI.DOScale(defaultScale, 1f).SetEase(Ease.OutBounce);*/
+    }
+
+    public void ActivateScoreAndCubes()
+    {
+
+        Score.gameObject.SetActive(true);
+        Cubes.gameObject.SetActive(true);
+
 
         /*
                 WinUI.transform.localScale = Vector3.one * 0.0001f;

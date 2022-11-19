@@ -75,6 +75,7 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerCubes\PlayerCubeManager.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerMotion\PlayerMoverController.cs" />
+    <Compile Include="Assets\CubeSurfer\Scripts\Game\MenuScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
