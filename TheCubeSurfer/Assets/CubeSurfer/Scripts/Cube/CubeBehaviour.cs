@@ -65,7 +65,7 @@ public class CubeBehaviour : MonoBehaviour
     public void AccessNextLevelEndPoint()
     {
         PlayerBehaviour.Instance.VictoryAnimation();
-        GameManager.Instance.ActivateNextUI();
+        //GameManager.Instance.ActivateNextUI();
         Debug.Log("next level!");
 
 
@@ -76,7 +76,7 @@ public class CubeBehaviour : MonoBehaviour
     public void AccessEndPoint()
     {
         PlayerBehaviour.Instance.VictoryAnimation();
-        GameManager.Instance.ActivateWinUI();
+       // GameManager.Instance.ActivateWinUI();
         Debug.Log("win!");
 
 

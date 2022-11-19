@@ -31,7 +31,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void VictoryAnimation()
     {
-        animatorOfPlayer.SetTrigger("Victory");
+        
         SlowDownPlayer();
     }
 
@@ -50,8 +50,10 @@ public class PlayerBehaviour : MonoBehaviour
     {
         DOTween.To(() => playerMoverRunner.Velocity, x => playerMoverRunner.Velocity = x, 0, 1.5f).OnUpdate(() => {
             Debug.Log("DOTween Update");
+            animatorOfPlayer.SetTrigger("Victory");
         }).OnComplete(() => {
             Debug.Log("On Complete");
+            GameManager.Instance.ActivateWinUI();
         });
     }
 

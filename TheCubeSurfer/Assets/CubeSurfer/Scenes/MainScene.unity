@@ -1537,8 +1537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WinUI: {fileID: 1986441315}
   FailUI: {fileID: 362098888}
-  Score: {fileID: 0}
-  Cubes: {fileID: 0}
+  NextUI: {fileID: 0}
 --- !u!4 &360293296
 Transform:
   m_ObjectHideFlags: 0
@@ -2045,7 +2044,7 @@ GameObject:
   - component: {fileID: 449101554}
   m_Layer: 0
   m_Name: FinishLine
-  m_TagString: Untagged
+  m_TagString: EndOfLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

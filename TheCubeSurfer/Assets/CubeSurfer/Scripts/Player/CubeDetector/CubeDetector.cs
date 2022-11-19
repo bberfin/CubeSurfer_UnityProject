@@ -27,32 +27,12 @@ public class CubeDetector : MonoBehaviour
 
     public void AccessEndPoint()
     {
-        float angle = 0;
-        DOTween.To(() => PlayerMoverRunner.Velocity, x => angle = x, 0, 1f)
-            .OnUpdate(() =>
-            {
-                Debug.Log("DOTween Update");
-            }).OnComplete(() => {
-                Debug.Log("On Complete");
-                //Effect.gameObject.SetActive(true);
 
-                GameManager.Instance.ActivateWinUI();
-
-
-
-            });
-
+        
 
     }
 
-    IEnumerator DecreaseSpeedOfPlayer()
-    {
-        var yieldReturn = new WaitForEndOfFrame();
-        while (true)
-        {
 
-        }
-    }
 
 
 }
