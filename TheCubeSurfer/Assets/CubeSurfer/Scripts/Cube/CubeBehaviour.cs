@@ -10,7 +10,8 @@ public class CubeBehaviour : MonoBehaviour
     public bool isStacked = false;
     private RaycastHit hit;
 
-    public PlayerMoverRunner playerMoverRunner;
+
+
 
     
     AudioSource audioSource;
@@ -33,13 +34,6 @@ public class CubeBehaviour : MonoBehaviour
                 PlayerCubeManager.Instance.DropCube(this);
             }
 
-            
-            if (hit.transform.gameObject.CompareTag("FinishLine"))
-            {
-                Debug.Log($"on trigger enter: {hit.transform.gameObject.name}");
-                AccessEndPoint();
-            }
-
             if (hit.transform.gameObject.CompareTag("Diamond"))
             {
                 audioSource = GetComponent<AudioSource>();
@@ -50,16 +44,48 @@ public class CubeBehaviour : MonoBehaviour
                 
             }
 
+            
+            if (hit.transform.gameObject.CompareTag("EndOfLevel"))
+            {
+                Debug.Log($"on trigger enter: {hit.transform.gameObject.name}");
+                AccessNextLevelEndPoint();
+            }
+            
+
+            if (hit.transform.gameObject.CompareTag("FinishLine"))
+            {
+                Debug.Log($"on trigger enter: {hit.transform.gameObject.name}");
+                AccessEndPoint();
+            }
+
         }
     }
 
 
+    public void AccessNextLevelEndPoint()
+    {
+        PlayerBehaviour.Instance.VictoryAnimation();
+        GameManager.Instance.ActivateNextUI();
+        Debug.Log("next level!");
+
+
+
+
+    }
+
     public void AccessEndPoint()
     {
+        PlayerBehaviour.Instance.VictoryAnimation();
         GameManager.Instance.ActivateWinUI();
         Debug.Log("win!");
 
+
+
+
+
     }
+
+
 
     IEnumerator DecreaseSpeedOfPlayer()
     {
