@@ -9,7 +9,7 @@ public class PlayerCubeManager : MonoBehaviour
 
     AudioSource audioSource;
 
-    public ParticleSystem CollectCubeEffect;
+    
 
     private float stepLength = 0.043f;
     private float groundYValue = -0.0213f;
@@ -49,8 +49,7 @@ public class PlayerCubeManager : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
         audioSource.Play();
-        CollectCubeEffect.transform.parent = null;
-        CollectCubeEffect.Play();
+       
 
 
         ScoreScene.Instance.Cubes++;

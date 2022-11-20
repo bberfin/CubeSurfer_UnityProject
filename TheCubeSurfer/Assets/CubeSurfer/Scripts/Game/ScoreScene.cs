@@ -19,7 +19,7 @@ public class ScoreScene : MonoBehaviour
         set
         {
             PlayerPrefs.SetFloat("Cubes", value);
-            Txt_cubes.text = "CUBES: " + value.ToString();
+            Txt_cubes.text = value.ToString();
         }
     }
 
@@ -32,7 +32,7 @@ public class ScoreScene : MonoBehaviour
         set
         {
             PlayerPrefs.SetFloat("Score", value);
-            Txt_score.text = "SCORE: " + value.ToString();
+            Txt_score.text =value.ToString();
         }
     }
 
