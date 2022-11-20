@@ -8,6 +8,8 @@ public class CubeDetector : MonoBehaviour
     //public PlayerMoverRunner PlayerMoverRunner;
     //public ParticleSystem CubeEffect;
 
+    public GameObject CubeCollectEffect;
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Cube"))
@@ -18,6 +20,9 @@ public class CubeDetector : MonoBehaviour
 
             if (!cubeBehaviour.isStacked)
             {
+
+                Instantiate(CubeCollectEffect, collision.gameObject.transform.position, Quaternion.identity);
+
                 PlayerCubeManager.Instance.GetCube(cubeBehaviour);
                 //CubeEffect.transform.parent = null;
                 //CubeEffect.Play();

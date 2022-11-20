@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 2062801778738401547, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
       propertyPath: ObstacleEffect
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2656556542556591137, guid: 796859e17189f45449e1dcff41ebb54c, type: 3}
     m_RemovedComponents:
     - {fileID: 6555892432191601497, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}

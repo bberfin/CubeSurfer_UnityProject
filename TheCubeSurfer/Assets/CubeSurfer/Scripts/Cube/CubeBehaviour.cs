@@ -10,8 +10,8 @@ public class CubeBehaviour : MonoBehaviour
     public bool isStacked = false;
     private RaycastHit hit;
 
- 
-    
+
+    public GameObject ObstacleEffect;
     AudioSource audioSource;
 
 
@@ -29,6 +29,7 @@ public class CubeBehaviour : MonoBehaviour
             {
                 audioSource = hit.transform.gameObject.GetComponent<AudioSource>();
                 audioSource.Play();
+                Instantiate(ObstacleEffect, transform.position, Quaternion.identity);
                 PlayerCubeManager.Instance.DropCube(this);
                 
             }
