@@ -9,6 +9,8 @@ public class PlayerCubeManager : MonoBehaviour
 
     AudioSource audioSource;
 
+   // public ParticleSystem CubeEffect;
+
     private float stepLength = 0.043f;
     private float groundYValue = -0.0213f;
 
@@ -48,6 +50,7 @@ public class PlayerCubeManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         audioSource.Play();
 
+        
         ScoreScene.Instance.Cubes++;
 
     }
@@ -57,6 +60,8 @@ public class PlayerCubeManager : MonoBehaviour
         var playerTransform = PlayerBehaviour.Instance.transform;
         Vector3 playerTarget = new Vector3(0f, (listOfCubeBehaviour.Count) * stepLength + groundYValue, 0f);
         playerTransform.DOLocalMove(playerTarget, 0.05f);
+        
+
     }
 
     public void DropCube(CubeBehaviour cubeBehaviour)
@@ -102,6 +107,7 @@ public class PlayerCubeManager : MonoBehaviour
             Vector3 target = new Vector3(0f, index * stepLength, 0f);
             cube.transform.DOLocalMove(target, 0.05f);
             index--;
+
         }
     }
 }

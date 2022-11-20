@@ -10,9 +10,7 @@ public class CubeBehaviour : MonoBehaviour
     public bool isStacked = false;
     private RaycastHit hit;
 
-
-
-
+ 
     
     AudioSource audioSource;
 
@@ -32,6 +30,7 @@ public class CubeBehaviour : MonoBehaviour
                 audioSource = hit.transform.gameObject.GetComponent<AudioSource>();
                 audioSource.Play();
                 PlayerCubeManager.Instance.DropCube(this);
+                
             }
 
             if (hit.transform.gameObject.CompareTag("Diamond"))
@@ -41,6 +40,7 @@ public class CubeBehaviour : MonoBehaviour
                 Debug.Log($"on trigger enter: {hit.transform.gameObject.name}");  
                 Destroy(hit.transform.gameObject);
                 ScoreScene.Instance.PlayerScore++;
+                
                 
             }
 
@@ -82,10 +82,6 @@ public class CubeBehaviour : MonoBehaviour
         Debug.Log("win!");
 
     }
-
-
-
-
 
 
 }
