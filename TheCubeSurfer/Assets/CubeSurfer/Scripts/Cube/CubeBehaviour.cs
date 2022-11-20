@@ -39,9 +39,7 @@ public class CubeBehaviour : MonoBehaviour
                 audioSource.Play();
                 Debug.Log($"on trigger enter: {hit.transform.gameObject.name}");  
                 Destroy(hit.transform.gameObject);
-                ScoreScene.Instance.PlayerScore++;
-                
-                
+                ScoreScene.Instance.PlayerScore++;               
             }
 
             

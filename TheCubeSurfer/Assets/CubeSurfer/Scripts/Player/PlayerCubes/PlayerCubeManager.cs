@@ -9,7 +9,7 @@ public class PlayerCubeManager : MonoBehaviour
 
     AudioSource audioSource;
 
-   // public ParticleSystem CubeEffect;
+   
 
     private float stepLength = 0.043f;
     private float groundYValue = -0.0213f;
