@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class CubeDetector : MonoBehaviour
 {
-    public PlayerMoverRunner PlayerMoverRunner;
-    public ParticleSystem CubeEffect;
+    //public PlayerMoverRunner PlayerMoverRunner;
+    //public ParticleSystem CubeEffect;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -20,7 +20,7 @@ public class CubeDetector : MonoBehaviour
             {
                 PlayerCubeManager.Instance.GetCube(cubeBehaviour);
                 //CubeEffect.transform.parent = null;
-                CubeEffect.Play();
+                //CubeEffect.Play();
 
             }
         }

@@ -65,6 +65,7 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Game\ScoreScene.cs" />
+    <Compile Include="Assets\CubeSurfer\Scripts\Game\ProgressBar.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerBehaviour.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Game\TransitionScenes.cs" />
@@ -76,7 +77,6 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerCubes\PlayerCubeManager.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerMotion\PlayerMoverController.cs" />
-    <Compile Include="Assets\CubeSurfer\Scripts\Game\ProgressBar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
