@@ -881,8 +881,8 @@ Transform:
   - {fileID: 179605507}
   - {fileID: 1582438503}
   - {fileID: 1117906520}
-  - {fileID: 684805250}
   - {fileID: 1067751618}
+  - {fileID: 684805250}
   m_Father: {fileID: 1755388793}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7594,7 +7594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e9a4d7f79d907b4d8c985f41a0040d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CubeCollectEffect: {fileID: 9105173504480227649, guid: 5ea003f3297d33746b4adfc905290098, type: 3}
+  CubeCollectEffect: {fileID: 100018, guid: b128f03769fe74c46b41f480e50a9279, type: 3}
 --- !u!135 &1403868235
 SphereCollider:
   m_ObjectHideFlags: 0
