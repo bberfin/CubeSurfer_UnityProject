@@ -12,6 +12,7 @@ public class CubeBehaviour : MonoBehaviour
 
 
     public GameObject ObstacleEffect;
+    public GameObject DiamondEffect;
     AudioSource audioSource;
 
 
@@ -38,6 +39,8 @@ public class CubeBehaviour : MonoBehaviour
             {
                 audioSource = GetComponent<AudioSource>();
                 audioSource.Play();
+                Instantiate(DiamondEffect, hit.transform.position, Quaternion.identity);
+
                 Debug.Log($"on trigger enter: {hit.transform.gameObject.name}");  
                 Destroy(hit.transform.gameObject);
                 ScoreScene.Instance.PlayerScore++;               

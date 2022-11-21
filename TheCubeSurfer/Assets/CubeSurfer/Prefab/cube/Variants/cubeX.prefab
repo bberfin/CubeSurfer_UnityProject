@@ -92,15 +92,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2062801778738401544, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.001
+      value: -0.008
       objectReference: {fileID: 0}
     - target: {fileID: 2062801778738401544, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.05
+      value: -0.05204296
       objectReference: {fileID: 0}
     - target: {fileID: 2062801778738401544, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.82
+      value: -0.29600048
       objectReference: {fileID: 0}
     - target: {fileID: 2062801778738401544, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -108,7 +108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2062801778738401544, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2062801778738401544, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
       propertyPath: m_LocalRotation.y
@@ -130,6 +130,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2062801778738401547, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
+      propertyPath: DiamondEffect
+      value: 
+      objectReference: {fileID: 1845240806346120, guid: b683ed25a8e188849812e375ea391caa, type: 3}
     - target: {fileID: 2062801778738401547, guid: 4d8850780aceb2342945e8a2c5ae719a, type: 3}
       propertyPath: ObstacleEffect
       value: 
