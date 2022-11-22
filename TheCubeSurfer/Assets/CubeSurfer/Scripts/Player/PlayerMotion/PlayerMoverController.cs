@@ -8,13 +8,7 @@ public class PlayerMoverController : MonoBehaviour
 
     public float VelocityX { get { return velocityX; } }
 
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
         Motion();
@@ -30,7 +24,6 @@ public class PlayerMoverController : MonoBehaviour
 
             Debug.Log("mouse-> one click");
         }
-
         */
 
         if (Input.GetMouseButton(0))

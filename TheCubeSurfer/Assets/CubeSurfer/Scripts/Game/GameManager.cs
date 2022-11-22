@@ -35,35 +35,17 @@ public class GameManager : MonoBehaviour
 
     public void ActivateWinUI()
     {
-
         WinUI.gameObject.SetActive(true);
-        Vector3 defaultScale = WinUI.transform.localScale;
-
-/*
-        WinUI.transform.localScale = Vector3.one * 0.0001f;
-        WinUI.DOScale(defaultScale, 1f).SetEase(Ease.OutBounce);*/
     }
 
     public void ActivateFailUI()
     {
-
         FailUI.gameObject.SetActive(true);
-        Vector3 defaultScale = FailUI.transform.localScale;
-
-        /*
-                WinUI.transform.localScale = Vector3.one * 0.0001f;
-                WinUI.DOScale(defaultScale, 1f).SetEase(Ease.OutBounce);*/
     }
 
     public void ActivateNextUI()
     {
-
         NextUI.gameObject.SetActive(true);
-        Vector3 defaultScale = NextUI.transform.localScale;
-
-        /*
-                WinUI.transform.localScale = Vector3.one * 0.0001f;
-                WinUI.DOScale(defaultScale, 1f).SetEase(Ease.OutBounce);*/
     }
 
     public void RestartGame()

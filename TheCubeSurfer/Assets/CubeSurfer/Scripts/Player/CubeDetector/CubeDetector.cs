@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class CubeDetector : MonoBehaviour
 {
-    //public PlayerMoverRunner PlayerMoverRunner;
-    //public ParticleSystem CubeEffect;
 
     public GameObject CubeCollectEffect;
 
@@ -24,22 +22,14 @@ public class CubeDetector : MonoBehaviour
                 Instantiate(CubeCollectEffect, collision.gameObject.transform.position, Quaternion.identity);
 
                 PlayerCubeManager.Instance.GetCube(cubeBehaviour);
-                //CubeEffect.transform.parent = null;
-                //CubeEffect.Play();
+
+
 
             }
         }
 
 
     }
-
-
-    public void AccessEndPoint()
-    {
-
-      
-    }
-
 
 
 

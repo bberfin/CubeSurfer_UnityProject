@@ -12,7 +12,7 @@ public class PlayerMoverRunner : MonoBehaviour
     [SerializeField]
     public float Velocity;
 
-    //private float forwardSpeed;
+
     [SerializeField]
     private float horizontalSpeed;
     [SerializeField]
