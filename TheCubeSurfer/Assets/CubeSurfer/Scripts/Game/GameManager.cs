@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public RectTransform FailUI;
     public RectTransform NextUI;
 
+
+
     #region Singleton
 
     public static GameManager Instance;
@@ -28,6 +30,8 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion
+
+
 
     public void ActivateWinUI()
     {
